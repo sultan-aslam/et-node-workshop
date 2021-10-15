@@ -1,0 +1,18 @@
+<html>
+  <%- include('./head.ejs') %>
+  <body>
+    <h1>Hello</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <% students.forEach((val, index)=>{ %>
+      <tr>
+        <td><%= val.name %></td>
+        <td><%= val.age %></td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
